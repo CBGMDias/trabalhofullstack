@@ -8,6 +8,8 @@ const PORT = 3000;
 // Middleware para tratar JSON
 app.use(express.json());
 
+app.use(express.static('public'));
+
 app.get('/', (req, res) => {
   res.send('Servidor rodando...');
 });
