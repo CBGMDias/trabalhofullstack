@@ -8,11 +8,8 @@ const PORT = 3000;
 // Middleware para tratar JSON
 app.use(express.json());
 
+// Middleware pros arquivos da pasta public
 app.use(express.static('public'));
-
-app.get('/', (req, res) => {
-  res.send('Servidor rodando...');
-});
 
 // Rota post pessoas
 app.post('/pessoas', async (req, res) => {

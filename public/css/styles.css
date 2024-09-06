@@ -1,33 +1,96 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
-}
-
-form {
-    margin-bottom: 20px;
-}
-
-input {
-    margin-right: 10px;
-    padding: 5px;
-}
-
-button {
-    padding: 5px 10px;
-}
-
-h2 {
-    margin-top: 30px;
-}
-
-ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .container {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pessoaForm {
+    flex: 1;
+    padding: 20px;
+    background-color: #e0f7fa;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  #pessoaForm h2 {
+    color: #00796b;
+  }
+  
+  #pessoaForm label {
+    display: block;
+    margin-bottom: 10px;
+    color: #004d40;
+  }
+  
+  #pessoaForm input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #004d40;
+    border-radius: 5px;
+  }
+  
+  #pessoaForm button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #pessoaForm button:hover {
+    background-color: #004d40;
+  }
+  
+  .pessoa-list-container {
+    flex: 1;
+    padding: 20px;
+    background-color: #ffebee;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .pessoa-list-container h2 {
+    color: #c62828;
+  }
+  
+  #pessoaList {
     list-style-type: none;
     padding: 0;
-}
-
-li {
-    background-color: #f0f0f0;
+  }
+  
+  #pessoaList li {
+    background-color: #ffcdd2;
     margin-bottom: 10px;
     padding: 10px;
     border-radius: 5px;
-}
+    color: #b71c1c;
+    border: 1px solid #b71c1c;
+  }
+
+  #mensagemSucesso {
+    display: none;
+    margin-left: 10px;
+    color: green;
+    font-weight: bold;
+  }
+  
+  

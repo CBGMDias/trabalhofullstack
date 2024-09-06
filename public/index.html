@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <h1>Cadastro de Pessoas</h1>
-    <form id="pessoaForm">
-        <input type="text" id="nome" placeholder="Nome" required>
-        <input type="text" id="cpf" placeholder="CPF" required>
-        <input type="text" id="telefone" placeholder="Telefone" required>
-        <button type="submit">Cadastrar</button>
-    </form>
-    <h2>Lista de Pessoas</h2>
-    <ul id="pessoaList"></ul>
+    <div class="container">
+        <form id="pessoaForm">
+          <h2>Adicionar Pessoa</h2>
+          <label for="nome">Nome:</label>
+          <input type="text" id="nome" name="nome" required>
+          <label for="cpf">CPF:</label>
+          <input type="text" id="cpf" name="cpf" required>
+          <label for="telefone">Telefone:</label>
+          <input type="text" id="telefone" name="telefone" required>
+          
+          <button type="submit">Cadastrar</button>
+
+          <span id="mensagemSucesso" style="display: none;"></span>
+        </form>
+      
+        <div class="pessoa-list-container">
+          <h2>Lista de Pessoas</h2>
+          <ul id="pessoaList"></ul>
+        </div>
+    </div>
 
     <script src="js/scripts.js"></script>
 </body>
